@@ -3,6 +3,8 @@ body {
   font-size: 14pt;
   font-weight: bold;
   font-family: sans-serif;
+  width = device-width;
+  initial-scale = 1;
 }
 
 h1 {

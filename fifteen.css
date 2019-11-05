@@ -1,0 +1,42 @@
+/*Kristen Martinet
+CSC 3610
+CSS for Project 4*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+
+.fifteenbody {
+  font-family: cursive;
+  font-size: 14pt;
+  text-align: center;
+}
+
+#puzzlearea {
+  font-size: 40pt;
+  width: 400px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+}
+
+#puzzlearea div {
+  width: 90px;
+  height: 90px;
+  float: left;
+  overflow: hidden;
+  border: 5px solid black;
+  background-position: left;
+}
+
+.mouseHover {
+  color: red;
+  border: 5px solid red !important;
+}

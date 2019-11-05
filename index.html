@@ -167,9 +167,9 @@ Cards
 		<h2>Connect</h2>
 	</div>
 	<div class="col-12 social padding">
-		<a href="https://scholar.google.com/citations?user=ZSvUfN0AAAAJ&hl=en&oi=ao"><i class="fab fa-google"></i></a>
-		<a href="#"><i class="fab fa-twitter"></i></a>
-		<a href="mailto:kmartinet@uidaho.edu"><i class="fas fa-at"></i></a>
+		<a href="https://scholar.google.com/citations?user=ZSvUfN0AAAAJ&hl=en&oi=ao" data-toggle="tooltip" title="Google Scholar"><i class="fab fa-google"></i></a>
+		<a href="#"><i class="fab fa-twitter" data-toggle="tooltip" title="No Twitter yet"></i></a>
+		<a href="mailto:kmartinet@uidaho.edu" data-toggle="tooltip" title="Email me"><i class="fas fa-at"></i></a>
 	</div>
 </div>
 </div>
@@ -180,6 +180,12 @@ Cards
 
 </footer>
 
+<!-- Normally I'd use a separate JavaScript file, but this is the only addition -->
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
 
 
 </body>

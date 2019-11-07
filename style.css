@@ -60,6 +60,9 @@ li.fl {
   text-shadow: 1px 1px 10px #000;
   padding-bottom: 1rem;
 }
+.display-2.test {
+  text-transform: none;
+}
 .btn-primary {
   background-color: #6648b1;
   border: 1px solid #563d7c;

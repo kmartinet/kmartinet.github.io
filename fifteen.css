@@ -10,7 +10,14 @@ html, body {
   font-family: 'Poppins', sans-serif;
   color: #222;
   text-align: center;
+  cursor: url('lizardcursor.png'), pointer;
+  height: 100%;
 }
+
+a {
+  cursor: url('otherlizardcursor.png'), pointer;
+}
+
 
 #puzzlearea {
   font-size: 40pt;

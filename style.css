@@ -6,12 +6,12 @@ html, body {
   width: 100%;
   font-family: 'Poppins', sans-serif;
   color: #222;
-    cursor: url('lizardcursor.png'), pointer;
+  cursor: url('lizardcursor.png'), url("https://kmartinet.github.io/lizardcursor.png"), pointer;
   height: 100%;
 }
 
 a {
-  cursor: url('otherlizardcursor.png'), pointer;
+  cursor: url('otherlizardcursor.png'), url("https://kmartinet.github.io/otherlizardcursor.png"), pointer;
 }
 
 

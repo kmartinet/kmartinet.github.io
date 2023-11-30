@@ -99,7 +99,7 @@
 	<div class="col-md-12 col-lg-6">
 		<h2>Arbor Workflows</h2>
 		<p>The goal of web applications built by the Arbor Workflows team is to create more accessible tools for studying phylogenetics. These applications simply require the user to choose a method of interest, upload their data, and press “Go” to complete phylogenetic analyses. My role on the Arbor Workflows team is to create new, intuitive web-based tools to allow users to easily perform phylogenetic comparative methods. Please feel free to <a href="http://arbor.knowledgevis.com:8080/#/" class="footer-link">play with the beta version of this web service by clicking here</a>.</p>
-		<p>Additional notes for those interested in how Arbor is built: data management is handled by <a href="https://girder.readthedocs.io/en/latest/">Girder</a> and its REST API allows us to call methods within Python scripts and receive results from the analyses conducted within those scripts. In many cases, I write the code necessary for a particular phylogenetic comparative method in R, which is then wrapped in Python using <a href="https://rpy2.github.io/">rpy2</a>. Once a method is called by the user interface, it runs in the background and the results are served back through the API to the user interface page (often as a data table or an associated plot).</p>
+		<p>Additional notes for those interested in how Arbor is built: data management is handled by <a href="https://girder.readthedocs.io/en/latest/" class="footer-link">Girder</a> and its REST API allows us to call methods within Python scripts and receive results from the analyses conducted within those scripts. In many cases, I write the code necessary for a particular phylogenetic comparative method in R, which is then wrapped in Python using <a href="https://rpy2.github.io/" class="footer-link">rpy2</a>. Once a method is called by the user interface, it runs in the background and the results are served back through the API to the user interface page (often as a data table or an associated plot).</p>
 		</div>
 		<div class="col-lg-6">
 			<img src="img/arbor_logo.png" class="img-fluid">
@@ -123,7 +123,7 @@
 <div class="container-fluid padding mx-auto">
 <div class="row padding mx-auto">
 	<div class="col-md-12 col-lg-6">
-		<h2>Exploring Evolutionary Predictability in Video Games</h2>
+		<h2>Exploring Evolutionary Predictability Using Video Games</h2>
 		<p><i>Project Hastur</i> is an evolutionary tower defense video game developed by the <a href="https://polymorphicgames.com/" class="footer-link">Polymorphic Games Studio</a> at the University of Idaho. In this game, the enemies evolve to combat the player’s strategy through a mathematical model of biological evolution. The fitness of enemies is based on how long they survive in the fight against the player, and enemies with the highest fitness reproduce at the end of each generation. This evolution of enemies makes the game more difficult for players if they aren’t paying attention. For example, if the player uses mostly turrets that shoot fire bullets, the enemies will eventually evolve to be resistant to fire bullets. This player will need to change their strategy and use a different strategy if they hope to beat future generations of enemies.</p>
 
 		<p>Taking this evolution into account, <i>Project Hastur</i> provides the perfect playground for studies about evolutionary concepts. When different players use the same strategy, do the enemies evolve to share the same phenotypes like we see in convergent evolution on Earth? Is evolution predictable overall? What might the conclusions from <i>Project Hastur</i> suggest about predictable evolution on Earth? After running trials during which a player used multiple different strategies in many different evolutionary treatments (turning certain fitness functions on/off), we found that the relative amount of variation produced was predictable, but the details of the varieties of enemies that arise differ dramatically even within replicates.</p>
@@ -136,6 +136,27 @@
 	<div class="col-lg-6 justify-content-center">
 		<img src="img/hastur.png" class="img-fluid">
 		<p>A screenshot from <i>Project Hastur</i> illustrating turret placement and targeting enemies emerging from their burrow (left).</p>
+	</div>
+</div>
+
+<hr class="my-4">
+
+<div class="container-fluid padding mx-auto">
+<div class="row padding mx-auto">
+	<div class="col-md-12 col-lg-6">
+		<h2>Adding Mate Selection to an Evolutionary Video Game</h2>
+		<p><i>Evolvy Bugs</i> is an evolutionary mobile video game being developed by the <a href="https://polymorphicgames.com/" class="footer-link">Polymorphic Games Studio</a> at the University of Idaho. Just like other Polymorphic Games projects, the enemies evolve to combat the player’s strategy through a mathematical model of biological evolution. The fitness of enemies is based on how long they survive in the fight against the player, and enemies with the highest fitness reproduce at the end of each generation. <i>Evolvy Bugs</i> takes inspiration from <i>Space Invaders</i>: the player controls a space ship that shoots at aliens that float in from the top of the screen. With the addition of evolution to this classic style of game, players can watch the aliens come up with new behaviors and resistances to combat their strategies. For example, if a player shoots at aliens as soon as they drop down from the top of the screen, the aliens will start to choose to hide behind asteroids to prevent the player from easily shooting at them.
+
+		<p>My role in the development of <i>Evolvy Bugs</i> is to add a model of mate selection to the game. In this model of mate selection, females prefer males that have more hair. Due to this selection pressure, players see the alien population get hairier and hairier as the game progresses. The trait under selection does not have a cost, so the aliens display Fisherian selection. This illustration of Fisherian selection adds another evolutionary process that can be taught in classrooms using this game.</p>
+		</div>
+		<div class="col-lg-6">
+			<img src="img/evolvy_logo.png" class="img-fluid">
+		</div>
+		<br>
+	</div>
+	<div class="col-lg-6 justify-content-center">
+		<img src="img/evolvy_males.png" class="img-fluid">
+		<p>Three males in <i>Evolvy Bugs</i> at different generations. The male on the far-left is from a generation early in gameplay and does not have a lot of hair because mate selection has not impacted the evolution of males at that point. The male in the middle is from about 10 generations later and has more hair due to mate selection. The male on the far-right is from about 20 generations later than the middle male and has the most hair, driven by the females' preference for hairy males.</p>
 	</div>
 </div>
 

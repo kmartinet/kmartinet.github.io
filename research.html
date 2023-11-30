@@ -54,17 +54,92 @@
 <div class="container-fluid padding">
 <div class="row padding">
 	<div class="col-md-12 col-lg-6">
-		<h2>Adaptive Radiation of Lizards</h2>
-		<p>Several genera have experienced an adaptive radiation, such as textbook favorites like Darwin's Galapagos finches, Hawaiian silverswords, and Carribbean anoles. Arguably, the most extensively studied and well-known adaptive radiation is that of <i>Anolis</i> lizards, but the focus of study is usually on the island radiation and not on the continental counterpart. In fact, many continental adaptive radiations are not as well-studied as their island counterparts because of the complexities inherent in continental systems. Using three lizard families as my focus, I aim to explore the differences between island and continental adaptive radiations, as well as the differences between the radiations of different lizard families. </p>
-		<p><b>Family 1: <i>Dactyloidae</i> (genus <i>Anolis</i>)</b>. One of the coolest aspects of <i>Anolis</i> adaptive radiation on islands is that the anoles on each island have independently diversified into ecomorphs that allow different species to take advantage of different parts of their environment based on different morphological traits. For the purpose of my research, I am focusing on the well-studied clade <i>Norops</i>. I am working on comparing the diversification rates of the <i>Trachypilus</i> and <i>Placopsis</i> subclades of the Anolis island radiation to their mainland counterpart, the <i>Draconura</i> subclade.</p>
-		<p><b>Family 2: <i>Gekkonidae</i> (genus <i>Phelsuma</i>)</b>. <i>Phelsuma</i> is a large genus of geckos that originated in Madagascar and radiated out to surrounding archipelagos. Though these geckos have not speciated into ecomorphs like anoles have, they have also taken advantage of the ecological opportunity present on trees.</p>
-		<p><b>Family 3: <i>Scincidae</i> (genera <i>Emoia</i> and <i>Ctenotus</i>)</b>. The <i>Emoia samoensis</i> species group radiated from the Solomon Islands southeastward to the surrounding Melanesian islands. On nearby Australia, skinks in the <i>Ctenotus</i> genus rapidly diversified in arid regions. These two genera have similar morphological traits that have allowed them to diversify in their respective environments, so they are excellent counterparts for this comparative analysis.</p>
+		<h2>R Package for Species-Area Relationships</h2>
+		<p>My R package SSARP (Species-/Speciation-Area Relationship Projector) provides a suite of functions to help users create speciation- and species-area relationships for island-dwelling taxa using occurrence data from <a href="https://www.gbif.org/" class="footer-link">GBIF (Global Biodiversity Information Facility)</a>. The goal of this R package is to help island biogeographers create species-area relationships more easily and learn more about biodiversity patterns in their systems. At the time of writing this description, SSARP can be used to create species-area relationships, but not yet speciation-area relationships. Learn more about the functions included within the package by <a href="https://github.com/kmartinet/SSARP" class="footer-link">checking out the GitHub repo!</a></p>
+		</div>
+		<div class="col-lg-6">
+			<img src="img/SSARP_Logo.png" class="img-fluid">
+		</div>
 		<br>
 	</div>
 	<div class="col-lg-6">
-		<img src="img/Green_anole.jpg" class="img-fluid">
+		<img src="img/SSARP_Workflow.png" class="img-fluid">
 	</div>
 </div>
+
+<hr class="my-4">
+
+<div class="container-fluid padding">
+<div class="row padding">
+	<div class="col-md-12 col-lg-6">
+		<h2>Using SSARP to Explore the Impact of Non-Native Species on Species-Area Relationships</h2>
+		<p>I love thinking about the processes that lead to adaptive radiations, especially those that have occurred in squamates. I am, of course, drawn to the classic example of <i>Anolis</i> lizards, but other genera such as <i>Phelsuma</i> and <i>Emoia</i> have also experienced adaptive radiations. Another key feature of these systems is the accidental sharing of lizards between islands via boats and other human-related movement. Lizards that arrive on new islands often easily adapt to their new homes due to similar environments across archipelagoes, and sometimes non-native lizards displace the native species. When creating species-area relationships to visualize biodiversity patterns across archipelagoes for a given genus, how often do researchers filter their data to ensure that non-native species are not skewing the data? If we compare a species-area relationship that only includes native occurrences to one that includes both native and non-native occurrences, does the relationship change? To answer these questions, I am using my R package <i>SSARP</i> (described above) to gather and filter occurrence data for squamate genera that live on islands around the world. I have found that the relationships absolutely change when non-native species are added. For example, the slopes in the species-area relationship for <i>Anolis</i> get flatter and the breakpoint moves forward when non-native species are added.</p>
+		</div>
+		<div class="col-lg-6">
+			<img src="img/sagrei.png" class="img-fluid">
+		</div>
+		<br>
+	</div>
+	<div class="row text-center padding">
+		<div class="col-md-6">
+			<img src="img/A_Native_SAR.png" class="img-fluid">
+			<p>Species-area relationship for <i>Anolis</i> including only native occurrence points.</p>
+		</div>
+		<div class="col-md-6">
+			<img src="img/A_NNative_SAR.png" class="img-fluid">
+			<p>Species-area relationship for <i>Anolis</i> including both native and non-native occurrence points.</p>
+		</div>
+	</div>
+</div>
+
+<hr class="my-4">
+
+<div class="container-fluid padding">
+<div class="row padding">
+	<div class="col-md-12 col-lg-6">
+		<h2>Arbor Workflows</h2>
+		<p>The goal of web applications built by the Arbor Workflows team is to create more accessible tools for studying phylogenetics. These applications simply require the user to choose a method of interest, upload their data, and press “Go” to complete phylogenetic analyses. My role on the Arbor Workflows team is to create new, intuitive web-based tools to allow users to easily perform phylogenetic comparative methods. Please feel free to <a href="http://arbor.knowledgevis.com:8080/#/" class="footer-link">play with the beta version of this web service by clicking here</a>.</p>
+		<p>Additional notes for those interested in how Arbor is built: data management is handled by <a href="https://girder.readthedocs.io/en/latest/">Girder</a> and its REST API allows us to call methods within Python scripts and receive results from the analyses conducted within those scripts. In many cases, I write the code necessary for a particular phylogenetic comparative method in R, which is then wrapped in Python using <a href="https://rpy2.github.io/">rpy2</a>. Once a method is called by the user interface, it runs in the background and the results are served back through the API to the user interface page (often as a data table or an associated plot).</p>
+		</div>
+		<div class="col-lg-6">
+			<img src="img/arbor_logo.png" class="img-fluid">
+		</div>
+		<br>
+	</div>
+	<div class="row text-center padding">
+		<div class="col-md-6">
+			<img src="img/FitContinuous1.png" class="img-fluid">
+			<p>Screenshot of the FitContinuous app, which runs the fitContinous function in the R package <i>geiger</i> once users upload a tree and table, choose parameters, and click "Go."</p>
+		</div>
+		<div class="col-md-6">
+			<img src="img/FitContinuous2.png" class="img-fluid">
+			<p>Screenshot of the result plot from the FitContinous app, which is a phenogram that illustrates the change in phenotype over time.</p>
+		</div>
+	</div>
+</div>
+
+<hr class="my-4">
+
+<div class="container-fluid padding mx-auto">
+<div class="row padding">
+	<div class="col-md-12 col-lg-6">
+		<h2>Exploring Evolutionary Predictability in Video Games</h2>
+		<p><i>Project Hastur</i> is an evolutionary tower defense video game developed by the <a href="https://polymorphicgames.com/" class="footer-link">Polymorphic Games Studio</a> at the University of Idaho. In this game, the enemies evolve to combat the player’s strategy through a mathematical model of biological evolution. The fitness of enemies is based on how long they survive in the fight against the player, and enemies with the highest fitness reproduce at the end of each generation. This evolution of enemies makes the game more difficult for players if they aren’t paying attention. For example, if the player uses mostly turrets that shoot fire bullets, the enemies will eventually evolve to be resistant to fire bullets. This player will need to change their strategy and use a different strategy if they hope to beat future generations of enemies.</p>
+
+		<p>Taking this evolution into account, <i>Project Hastur</i> provides the perfect playground for studies about evolutionary concepts. When different players use the same strategy, do the enemies evolve to share the same phenotypes like we see in convergent evolution on Earth? Is evolution predictable overall? What might the conclusions from <i>Project Hastur</i> suggest about predictable evolution on Earth? After running trials during which a player used multiple different strategies in many different evolutionary treatments (turning certain fitness functions on/off), we found that the relative amount of variation produced was predictable, but the details of the varieties of enemies that arise differ dramatically even within replicates.</p>
+		</div>
+		<div class="col-lg-6">
+			<img src="img/hastur_logo.jpg" class="img-fluid">
+		</div>
+		<br>
+	</div>
+	<div class="col-lg-6 justify-content-center">
+		<img src="img/hastur.png" class="img-fluid">
+		<p>A screenshot from <i>Project Hastur</i> illustrating turret placement and targeting enemies emerging from their burrow (left).</p>
+	</div>
+</div>
+
+
 <hr class="my-4">
 </div>
 </div>

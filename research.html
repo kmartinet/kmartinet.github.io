@@ -71,6 +71,21 @@
 
 <div class="container-fluid padding">
 <div class="row padding mx-auto">
+	<div class="col-md-12 col-lg-6 mx-auto">
+		<h2>Determining Drivers of Presence, Richness, and Speciation in Island Adaptive Radiations</h2>
+		<p>Islands have served as natural laboratories for understanding the origins of biodiversity, yet the degree to which general principles govern diversification across isolated systems remains unclear. In this project, we tested whether two features of island biodiversity generalize across archipelagos and independently radiating lineages. We inferred species- and speciation-area relationships for Caribbean, Galapagos, and Hawaiian taxa that diversified via adaptive radiations. We then fit regression models incorporating geological, environmental, and lineage-specific predictors to identify drivers of species richness and presence. This work has not been published yet, so I will keep the exact conclusions a secret for now, but we found that species richness and presence are driven by distinct ecological filters, and that island area alone is insufficient to predict biodiversity patterns.</p>
+		</div>
+		<div class="col-lg-6">
+			<img src="img/ar_comp.png" width = "800" class="img-fluid">
+		</div>
+		<br>
+	</div>
+</div>
+
+<hr class="my-4">
+
+<div class="container-fluid padding">
+<div class="row padding mx-auto">
 	<div class="col-md-12 col-lg-6">
 		<h2>Using <i>ssarp</i> to Explore the Impact of Non-Native Species on Species-Area Relationships</h2>
 		<p>I love thinking about the processes that lead to adaptive radiations, especially those that have occurred in squamates. I am, of course, drawn to the classic example of <i>Anolis</i> lizards, but other genera such as <i>Phelsuma</i> and <i>Emoia</i> have also experienced adaptive radiations. Another key feature of these systems is the accidental sharing of lizards between islands via boats and other human-related movement. Lizards that arrive on new islands often easily adapt to their new homes due to similar environments across archipelagoes, and sometimes non-native lizards displace the native species. When creating species-area relationships to visualize biodiversity patterns across archipelagoes for a given genus, how often do researchers filter their data to ensure that non-native species are not skewing the data? If we compare a species-area relationship that only includes native occurrences to one that includes both native and non-native occurrences, does the relationship change? To answer these questions, I am using my R package <i>SSARP</i> (described above) to gather and filter occurrence data for squamate genera that live on islands around the world. I have found that the relationships absolutely change when non-native species are added. For example, the slopes in the species-area relationship for <i>Anolis</i> get flatter and the breakpoint moves forward when non-native species are added.</p>
@@ -94,11 +109,24 @@
 
 <hr class="my-4">
 
+</div>
+</div>
+</div>
+
+<!-- Past Research -->
+<div class="container-fluid padding">
+<div class="row welcome text-center">
+	<div class="col-12">
+		<h1 class="display-4">Past Research</h1>
+	</div>
+</div>
+</div>
+
 <div class="container-fluid padding">
 <div class="row padding mx-auto">
 	<div class="col-md-12 col-lg-6">
 		<h2>Arbor Workflows</h2>
-		<p>The goal of web applications built by the Arbor Workflows team is to create more accessible tools for studying phylogenetics. These applications simply require the user to choose a method of interest, upload their data, and press “Go” to complete phylogenetic analyses. My role on the Arbor Workflows team is to create new, intuitive web-based tools to allow users to easily perform phylogenetic comparative methods. Please feel free to <a href="http://arbor.knowledgevis.com:8080/#/" class="footer-link">play with the beta version of this web service by clicking here</a>.</p>
+		<p>The goal of web applications built by the Arbor Workflows team is to create more accessible tools for studying phylogenetics. These applications simply require the user to choose a method of interest, upload their data, and press “Go” to complete phylogenetic analyses. My role on the Arbor Workflows team was to create new, intuitive web-based tools to allow users to easily perform phylogenetic comparative methods. If you'd like to play with the beta version of this service, <a href="https://github.com/arborworkflows/arbor_v3" class="footer-link">please feel free to clone the GitHub repo including the Docker container here</a>.</p>
 		<p>Additional notes for those interested in how Arbor is built: data management is handled by <a href="https://girder.readthedocs.io/en/latest/" class="footer-link">Girder</a> and its REST API allows us to call methods within Python scripts and receive results from the analyses conducted within those scripts. In many cases, I write the code necessary for a particular phylogenetic comparative method in R, which is then wrapped in Python using <a href="https://rpy2.github.io/" class="footer-link">rpy2</a>. Once a method is called by the user interface, it runs in the background and the results are served back through the API to the user interface page (often as a data table or an associated plot).</p>
 		</div>
 		<div class="col-lg-6">
@@ -162,20 +190,7 @@
 	</div>
 </div>
 
-
 <hr class="my-4">
-</div>
-</div>
-</div>
-
-<!-- Past Research -->
-<div class="container-fluid padding">
-<div class="row welcome text-center">
-	<div class="col-12">
-		<h1 class="display-4">Past Research</h1>
-	</div>
-</div>
-</div>
 
 <div class="container-fluid padding">
 <div class="row padding mx-auto">
